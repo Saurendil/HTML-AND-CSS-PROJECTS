@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hand Sign Weaving Course</title>    
+    <meta charset="utf-8">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+            <li><a href="one_page_website.html">HOME</a></li>
+        </ul>
+        <ul>
+            <li><a href="#Fire Style">Fire Ball Hand Sign diagram</a></li>
+            <li><a href="#Water Style">Water Prison Hand Sign diagram</a></li>
+            <li><a href="#Earth Style">Mud Wall Hand Sign diagram</a></li>
+            <li><a href="#Hand Sign Video">Videos</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1>Learn to weave Hand Signs of different Jutsu!</h1>
+        </div>
+    </header>
+
+    <!--TRAINING IMAGES-->
+    <section>
+        <div>
+            <h2>Choose A Jutsu Style</h2>
+            <div>
+                <!--FIRE STYLE IMAGE-->
+                <div id="Fire Style">
+                    <h3>Fire Ball Jutsu</h3>
+                    <img src="images/fireball.png" alt="Diagram of Hand signs for Fire Ball Jutsu">
+                </div>
+                <!--WATER STYLE IMAGE-->
+                <div id="Water Style">
+                    <h3>Water Prison Jutsu</h3>
+                    <img src="images/water.png" alt="Diagram of Hand signs for Water Prison Jutsu">
+                </div>
+                <!--EARTH STYLE IMAGE-->
+                <div id="Earth Style">
+                    <h3>Mud Wall Jutsu</h3>
+                    <img src="images/earth.png" alt="Diagram of Hand signs for Mud Wall Jutsu">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--VIDEOS-->
+    <section>
+        <!--HAND SIGN VIDEO-->
+        <div id="Hand Sign Video">
+            <h3>Example of Weaving Hand Signs to perform a Jutsu</h3>
+            <iframe width="540" height="220" 
+                src="https://www.youtube.com/embed/07R5yp53bDs?si=3s3-icu0BYnPKIU3" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Fill out the form below, and we'll get back to you!</p>
+        <form action="contact_form_handler.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>Hand Sign Weaving Course! &copy;</p>
+                </td>
+                <td>
+                    <p>111 Shinobi Rd</p>
+                    <p>Konoha, Land of Fire 22222</p>
+                </td>
+                <td>
+                    <p>444-555-6666</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
