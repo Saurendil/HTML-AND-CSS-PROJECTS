@@ -1,266 +1,345 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap');
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&family=Sacramento&display=swap');
 
-html{
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+/* General body styling */
+body {
+    font-family: 'Josefin Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4f1f1; /* Lighter teal background */
+    color: #333; /* Dark text for readability */
 }
 
-.nav-bar{
+/* Header */
+header {
+    background-color: #80b3b3; /* Lighter teal header */
+    padding: 40px 0;
+    text-align: center;
     position: sticky;
     top: 0;
-    z-index: 9;
+    z-index: 1000;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    margin: -8px -8px 0pxx -8px;
-    background-color: rgb(1, 128, 106);
-    border-bottom: 5px solid rgb(247,177,188);
-}
-
-a{
-    display: block;
-    font-family: "Josefin Slab", serif;
-    font-size: 25px;
-    font-weight: 800;
-    color: rgb(247, 177, 188);
-    text-align: center;
-    width: 100px;
-    padding: 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in;
-}
-
-a:hover, .drop:hover a:only-of-type{
-    background-color: rgb(149, 238, 223);
-    color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.7);
-    transition: background-color 0.3s ease-in;
-}
-
-.rollover-menu{
-    display:none;
-    position:absolute;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.drop:hover .rollover-menu{
-    display: block;
-}
-
-.rollover-menu a{
-    color: rgb(0, 80, 67);
-}
-
-.rollover-menu a:hover{
-    color: white;
-    box-shadow: 0px 8 px 16 px 0 px rgba(90, 90, 90, 0.2);
-}
-
-.rollover-menu a:nth-child(1){
-    boder-top: 5px solid rgb(238, 118, 136);
-}
-
-footer{
-    align-items: center;
-    margin: 0px -8px -8px -8px;
-    background-color: rgb(1, 128, 106);
-    border-top: 5px solid rgb(247, 177, 188);
-    bottom: 0;
-}
-
-table{
-    width: 100%;
-}
-
-td{
-    width: 33%;
-}
-
-td p{
-    font-family: "Josefin Slab", serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    color: rgb(247, 177, 188);
-}
-
-/*BODY*/
-
-.container{
-    display: inline-block;
-    background-size: 100%;
-    padding-top: 60px;
-    padding-left: 30px;
-}
-
-/*HEADERS*/
-
-h1{
+header h1 {
     font-family: 'Sacramento', cursive;
-    font-size: 80px;
-    color: rgb(0, 80, 67);
-    text-align: ceneter;
+    font-size: 3rem;
+    color: #f9c5d1; /* Soft pink */
+    margin: 0;
 }
 
-h2, h3, h4{
-    font-family: 'Josefin Slab', serif;
-    text-align: center;
+/* Navbar styling */
+nav {
+    background-color: #80b3b3; /* Lighter teal navbar */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-h2{
-    color: rgb(0, 80, 67);
-    font-size: 60px;
-    text-decoration: underline;
-    text-decoration-color: rgb(247, 177,188);
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-h3{
-    font-size: 30px;
+nav ul li {
+    margin: 0 15px;
 }
 
-h4{
-    font-size: 15px;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-p{
-    font-family: 'Josefin Slab', serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(0, 80, 67);
-    text-align: center;
-}
-
-/* Contact Form Styles */
-#contact form {
-    background-color: #f4f4f4; /* Light background to match the recipe cards */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#contact input[type="text"], 
-#contact input[type="email"], 
-#contact input[type="tel"], 
-#contact textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-#contact input[type="submit"] {
-    background-color: #4CAF50; /* Green button for submit */
+nav ul li a {
+    text-decoration: none;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
     transition: background-color 0.3s ease;
 }
 
-#contact input[type="submit"]:hover {
-    background-color: #45a049; /* Darker green on hover */
+nav ul li a:hover {
+    background-color: #f9c5d1; /* Soft pink hover */
+    border-radius: 5px;
 }
 
-#contact label {
-    font-size: 16px;
-    color: #555;
+/* Featured Recipe Image */
+.featured-image {
+    text-align: center;
+    margin-top: 20px;
 }
 
-#contact textarea {
-    grid-column: span 2;
-    height: 150px;
-    resize: none;
-    padding: 10px;
+.featured-image img {
+    width: 60%; /* Smaller image */
+    max-width: 600px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
 }
 
-#contact .subscription {
-    grid-column: span 2;
+.featured-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Featured Recipe Info Section */
+.featured-recipe-info {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    width: 60%; /* Match image width */
+    margin-left: auto;
+    margin-right: auto; /* Center align */
+}
+
+.featured-recipe-info h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
+    color: #f9c5d1; /* Soft pink */
+}
+
+.featured-recipe-info p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Recipe Description (Centered) */
+#recipe-description {
+    text-align: center;
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Recipe Gallery Layout - Two images per row */
+.recipe-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    position: relative;
+    background-color: #f9c5d1; /* Soft pink */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 300px; /* Fixed height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the image fit nicely within the card */
+    transition: transform 0.3s ease;
+}
+
+/* Card flip effect */
+.recipe-card .recipe-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #80b3b3; /* Lighter teal background for the back */
+    color: white;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.6s ease-in-out;
+}
+
+.recipe-card:hover img {
+    transform: rotateY(180deg); /* Flip the image */
+}
+
+.recipe-card:hover .recipe-content {
+    transform: rotateY(0deg); /* Reveal the content */
+}
+
+.recipe-card h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.recipe-card h4 {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.recipe-card input[type="button"] {
+    background-color: #fff;
+    color: #80b3b3; /* Lighter teal */
+    border: 2px solid #80b3b3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-card input[type="button"]:hover {
+    background-color: #80b3b3;
+    color: white;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
+    color: #80b3b3; /* Lighter teal */
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Contact Form */
+#contact {
+    background-color: #fff;
+    padding: 10px 20px; /* Reduced padding */
+    text-align: center;
+    max-width: 500px; /* Reduced width */
+    margin: 20px auto; /* Reduced margin for better size */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2rem;
+    color: #80b3b3; /* Lighter teal */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
 }
 
-#contact input[type="checkbox"] {
-    margin-right: 10px;
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
 }
 
-/*IMAGES*/
-
-/*Positions elements to sit side by side on the screen*/
-
-.column{
-    float: left;
-    width: 48%;
-    padding: 10px;
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+    border-color: #80b3b3; /* Lighter teal */
 }
 
-@media screen and (max-width:1200px){
-    .column{
-        width: 100%;
-        padding: 0px;
-        margin-left: -15px;
+form textarea {
+    height: 100px; /* Reduced height */
+}
+
+form input[type="submit"] {
+    background-color: #80b3b3; /* Lighter teal */
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #4d7c7c; /* Darker teal */
+}
+
+/* Footer */
+footer {
+    background-color: #4d7c7c; /* Darker teal footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .recipe-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .featured-recipe-info h2 {
+        font-size: 2rem;
+    }
+
+    #recipe-description {
+        font-size: 1.1rem;
     }
 }
 
-.column img:nth-child(-n + 7){
-    width: 500px;
-    height: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4),
-    0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.recipe-container{
-    width: 500px;
-    height: 350px;
-    margin: 100px auto 180px;
-}
-
-@media screen and(max-width: 600px){
-    .column img:nth-child(-n +7){
-        width: 350px;
-        height: 225px;
+@media (max-width: 480px) {
+    .recipe-gallery {
+        grid-template-columns: 1fr;
     }
-    .recipe-container{
-        width: 350px;
-        height: 225px;
+
+    .recipe-card h3 {
+        font-size: 1.4rem;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+        width: 90%;
+    }
+
+    form input[type="submit"] {
+        padding: 12px 20px;
     }
 }
-
-.recipe-card-background{
-    background-color: rgb(148, 238, 223);
-}
-
-@media screen and (max-width: 1200px){
-    #pork{
-        background-color: rgb(255, 255, 255);
-    }
-    #biscuits{
-        background-color: rgb(149, 238, 223);
-    }
-}
-
-#featured-header{
-    font-family: 'Sacramento', cursive;
-    font-size: 60px;
-    color: rgb(0, 80, 67);
-}
-
-#featured-button:hover{
-    background-color: rgb(247, 177, 188);
-}
-
-
