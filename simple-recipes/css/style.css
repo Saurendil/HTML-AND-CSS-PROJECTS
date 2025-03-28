@@ -11,6 +11,13 @@ body {
 }
 
 /* Header */
+
+.center-heading {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0;
+}
+
 header {
     background-color: #80b3b3; /* Lighter teal header */
     padding: 40px 0;
