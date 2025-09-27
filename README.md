@@ -1,11 +1,44 @@
-Project Title: Name of your project.
+# HTML Project
 
-Description: A short explanation of what the project is (e.g., “A responsive portfolio site built with HTML, CSS, and JavaScript”).
+## Description
+This project demonstrates my knowledge of semantic HTML by building a structured and accessible webpage. The focus is on clean markup, proper use of tags, and creating a foundation for styling.
 
-Features: Highlight what the project demonstrates (e.g., “Responsive design, CSS animations, hover effects, flexbox/grid layouts”).
+## Features
+- Semantic HTML5 structure  
+- Accessible design principles  
+- Organized layout for readability  
+- Placeholder content for future styling  
 
-How to Use: Steps to view or run the project (e.g., “Clone repo, open index.html in browser”).
+## How to Use
+Clone the repository and open `index.html` in your browser.
 
-Technologies Used: HTML, CSS, JavaScript, etc.
+```bash
+git clone https://github.com/saurendil/html-project.git
+cd html-project
+open index.html
 
-Screenshots (optional): Add images if you want to showcase.
+
+
+---
+
+# 📁 **CSS Project README**  
+
+```markdown
+# CSS Project
+
+## Description
+This project showcases styling and layout techniques with CSS. It demonstrates responsive design, use of selectors, hover effects, and grid/flexbox layouts.
+
+## Features
+- Responsive layout with media queries  
+- Flexbox and Grid for positioning  
+- Custom color scheme and typography  
+- Interactive hover and transition effects  
+
+## How to Use
+Clone the repository and open `index.html` in your browser.
+
+```bash
+git clone https://github.com/saurendil/css-project.git
+cd css-project
+open index.html
